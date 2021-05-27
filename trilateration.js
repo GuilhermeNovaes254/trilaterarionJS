@@ -17,24 +17,24 @@ module.exports = function (LatA, LonA, DistA, LatB, LonB, DistB, LatC, LonC, Dis
 	const xA = earthR * (math.cos(radians(LatA)) * math.cos(radians(LonA)));
 	const yA = earthR * (math.cos(radians(LatA)) * math.sin(radians(LonA)));
 	const zA = earthR * (math.sin(radians(LatA)));
-	console.log(xA, yA, zA);
+	// console.log(xA, yA, zA);
 
 	const xB = earthR * (math.cos(radians(LatB)) * math.cos(radians(LonB)));
 	const yB = earthR * (math.cos(radians(LatB)) * math.sin(radians(LonB)));
 	const zB = earthR * (math.sin(radians(LatB)));
-	console.log(xB, yB, zB);
+	// console.log(xB, yB, zB);
 
 	const xC = earthR * (math.cos(radians(LatC)) * math.cos(radians(LonC)));
 	const yC = earthR * (math.cos(radians(LatC)) * math.sin(radians(LonC)));
 	const zC = earthR * (math.sin(radians(LatC)));
-	console.log(xC, yC, zC);
+	// console.log(xC, yC, zC);
 
 	const P1 = [xA, yA, zA];
 	// const P2 = [xB, yB, zB];
 	// const P3 = [xC, yC, zC];
 	const P2minusP1 = [xB - xA, yB - yA, zB - zA]
 	const P3minusP1 = [xC - xA, yC - yA, zC - zA]
-	console.log(P2minusP1);
+	// console.log(P2minusP1);
 
 	// from wikipedia
 	// transform to get circle 1 at origin
